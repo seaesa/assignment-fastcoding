@@ -1,3 +1,295 @@
+.container {
+  max-width: 1470px;
+}
+/* css display */
+.flex {
+  display: flex;
+}
+.grid {
+  display: grid;
+}
+.block {
+  display: block;
+}
+.inline-block {
+  display: inline-block;
+}
+
+/* spacing */
 .ml-auto {
   margin-left: auto;
+}
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+.my-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.ml-2 {
+  margin-left: 6px;
+}
+.px-2 {
+  padding-left: 0.8rem;
+  padding-right: 0.8rem;
+}
+.px-3 {
+  padding-left: 1.2rem;
+  padding-right: 1.2rem;
+}
+.space-x-2 > * + * {
+  margin-left: 0.8rem;
+}
+.space-y-2 > * + * {
+  margin-top: 0.8rem;
+}
+.space-x-2\.5 > * + *	{
+  margin-left: 1rem;
+}
+.space-y-2\.5 > * + *	{
+  margin-top: 1rem;
+}
+.space-x-3 > * + * {
+  margin-left: 1.2rem;
+}
+.space-x-3\.5 > * + *	{
+  margin-left: 2.4rem;  
+}
+.space-x-4 > * + * {
+  margin-left: 1.6rem;
+} 
+.space-y-4 > * + *	{
+  margin-top: 1.6rem;
+}
+.space-y-5 > * + *	{
+  margin-top: 2rem;
+}
+.space-x-6 > * + * {
+  margin-left: 2.4rem;
+}
+.space-y-6 > * + * {
+  margin-top: 2.4rem;
+}
+
+.space-x-7 > * + *	 {
+  margin-left: 2.8rem;
+}
+.space-y-7 > * + *	{
+  margin-top: 2.8rem;
+}
+
+.space-x-8 > * + * {
+  margin-left: 3.2rem;
+}
+.space-y-8 > * + * {
+  margin-top: 3.2rem;
+} 
+.space-x-11 > * + * {
+  margin-left: 4.4rem;
+} 
+
+.text-center {
+  text-align: center;
+}
+
+.h-full {
+  height: 100%;
+}
+.h-2\/4 {
+  height: 50%;
+}
+.w-full {
+  width: 100%;
+}
+.w-2\/4 {
+  width: 50%;
+}
+.w-fit {
+  width: fit-content;
+}
+
+/* border */
+.rounded-md {
+  border-radius: 0.6rem;
+}
+.rounded-xl{
+  border-radius: 0.75rem;
+}
+.rounded-20 {
+  border-radius: 2rem;
+}
+
+/* color */
+.bg-primary {
+  background-color: var(--background-color-primary);
+}
+.bg-white {
+  background-color: var(--background-color-white);
+}
+.bg-block {
+  background-color: var(--background-color-block);
+}
+.bg-secondary {
+  background-color: var(--background-color-secondary);
+}
+.bg-third {
+  background-color: var(--background-color-third);
+}
+.bg-four {
+  background-color: var(--background-color-four);
+}
+.text-primary {
+  color:var(--text-color-primary);
+}
+.text-white {
+  color:var(--text-color-white);
+}
+.text-dimmed {
+  color:var(--text-color-dimmed);
+}
+.text-black {
+  color:var(--text-color-black);
+}
+.text-gray {
+  color: var(--text-color-gray);
+}
+.text-footer {
+  color: var(--text-color-footer);
+}
+.text-gray-500 {
+  color: var(--text-color-gray-500);
+}
+.text-gray-700 {
+  color: var(--text-color-gray-700);
+}
+.fill-primary {
+  fill: var(--fill-color-primary);
+}
+.fill-white {
+  fill: var(--fill-color-white);
+}
+
+/* Flexbox & Grid */
+.justify-center {
+  justify-content: center;
+}
+.justify-beetwen {
+  justify-content: space-between;
+}
+.justify-end {
+  justify-content: end;
+}
+.justify-around {
+  justify-content: space-around;
+}
+.items-center {
+  align-items: center;
+}
+.flex-col {
+  flex-direction: column;
+}
+.grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.gap-5	{
+  gap: 1.8rem;
+}
+.gap-x-11 {
+  column-gap: 4.4rem;
+}
+
+
+
+
+
+/* typography */
+.capitalize {
+  text-transform: capitalize;
+}
+.uppercase {
+  text-transform: uppercase;
+}
+.text-xs {
+  font-size: 1rem;
+  line-height: 1.4rem;
+}
+.text-sm {
+  font-size: 1.4rem;
+  line-height: 2rem;
+}
+.text-base {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+}
+.text-lg {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+.text-xl {
+  font-size: 2.4rem;  
+  line-height: 3.2rem;  
+}
+.text-2xl {
+  font-size: 2.6rem;
+  line-height: 3.9rem;
+}
+.text-title {
+  font-size: 4.6rem;
+  line-height: 5.6rem;
+  letter-spacing: -1.5%;
+}
+.text-400 {
+  font-weight: 400;
+}
+.text-500 {
+  font-weight: 500;
+}
+.text-600 {
+  font-weight: 600;
+}
+.text-700 {
+  font-weight: 700;
+}
+.text-800 {
+  font-weight: 800;
+}
+.font-popins {
+  font-family: var(--font-family-primary);
+}
+.font-nunito {
+  font-family: var(--font-family-secondary);
+}
+/* layout */
+.absolute {
+  position: absolute;
+}
+.relative {
+  position: relative;
+}
+.bottom-0 {
+  bottom: 0;
+}
+.top-0 {
+  top: 0;
+}
+.left-0 {
+  left: 0;
+}
+.right-0 {
+  right: 0;
+}
+.inset-x-0 {
+  left: 0px;
+  right: 0px;
+}
+.inset-y-0 {
+  top: 0px;
+  bottom: 0px;
+}
+
+/* Effect */
+.shadow {
+  box-shadow: 0px 0px 80px 0px rgba(203, 204, 188, 0.25);
 }

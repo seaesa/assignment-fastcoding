@@ -1,0 +1,127 @@
+#header-hero {
+  position: relative;
+}
+
+#top-bar {
+  height: 48px; 
+}
+#header {
+  height: 100px;
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--background-color-white);
+  z-index: 50;
+}
+#header-content {
+  height: 849px;
+  background-color: var(--background-color-third);
+}
+#navbar {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+#navbar > ul:first-child {
+  margin-right: 6.8rem;
+} 
+#header-content-right{
+  width: 60%;
+}
+.header-content-block {
+  height: 70.3rem;
+  background-color: var(--background-color-block);
+  position: relative;
+  top: -8px;
+  .header-content-right__revenue {
+    position: absolute;
+    bottom: -3.8rem;
+    left: -4.8rem;
+    width: 24rem;
+    height: 19rem; 
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 30px;
+  } 
+
+  .header-content-right__play {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-top-left-radius: 1rem;
+    padding: 1rem 1.2rem;
+  }
+  .header-content-right__arrow {
+    position: absolute;
+    left: -3rem;
+    top: 50%;
+    transform: translateX(-50%);
+  }
+}
+.navigation > li:hover {
+  color: var(--text-color-primary);
+  position: relative;
+  transition: all linear 0.08s;
+}
+.navigation > li:hover::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 90%;
+  left: 50%; 
+  transform: translateX(-50%);
+  background-color: var(--background-color-primary); 
+}
+ 
+
+  .header-content-left__heading {
+    font-size: 6.4rem;
+    line-height: 7.4rem;
+    letter-spacing: -1.5%;
+  }
+  .header-content-left__textarea { 
+    line-height: 2.8rem;
+    letter-spacing: -1%;
+    font-family: var(--font-family-secondary);
+    width: 80%;
+  }
+  .header-content-left {
+    width: 40%;
+  }
+  .header-content-left__content {
+    margin-bottom: 132px;
+  }
+  .header-content-left__block {
+    display: flex;
+    align-items: end;
+    & > * {
+      padding: 0.4rem 0 0 0.4rem;
+      background-color: var(--background-color-block);
+      width: 88px;
+      height: 60px;
+      &:first-child {
+        width: 114px;
+        height: 80px;
+      }
+  } 
+}
+
+.header-content-left__number {
+  &:first-child {
+    letter-spacing: -1%;
+    line-height: 3rem;
+    font-size: 2rem;
+  }
+  & > *:not(:first-child) {
+    font-size: 1rem;
+    letter-spacing: -1%;
+    font-weight: 500;
+    line-height: 15px;
+  }
+}

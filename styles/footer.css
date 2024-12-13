@@ -1,0 +1,7 @@
+#footer {
+  min-height: 502px;
+}
+#footer-nav {
+  min-height: 20px;
+  background-color: var(--background-color-primary);
+}
