@@ -1,7 +1,29 @@
 #footer {
-  min-height: 502px;
+  height: 502px;
+  padding: 4rem 2rem 1rem;
 }
+
 #footer-nav {
   min-height: 20px;
   background-color: var(--background-color-primary);
+}
+
+.footer-wrap {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 10rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-info {}
+
+.footer-info__input {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4px 16px 4px;
+  border-bottom: 1px solid rgba(77, 105, 175, 1)
 }

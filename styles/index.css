@@ -3,27 +3,31 @@
 @import "./header.css";
 @import "./container.css";
 @import "./footer.css";
+
 :root {
   --font-family-primary: "Poppins", serif;
   --font-family-secondary: "Nunito", sans-serif;
-  --background-color-primary:rgb(255,90,60);
-  --background-color-secondary:rgb(7,28,31);
-  --background-color-third:rgb(242,246,247);
-  --background-color-four:rgb(23,27,42);
-  --background-color-white:rgb(255,255,255);
-  --background-color-block:rgb(196,196,196);
-  
-  --text-color-primary:rgb(255,90,60);
-  --text-color-black: rgb(7,28,31);
-  --text-color-white:rgb(255,255,255);
-  --text-color-dimmed: rgb(158,171,178);
-  --text-color-gray: rgb(197,198,202); 
+  --background-color-primary: rgb(255, 90, 60);
+  --background-color-secondary: rgb(7, 28, 31);
+  --background-color-third: rgb(242, 246, 247);
+  --background-color-four: rgb(23, 27, 42);
+  --background-color-white: rgb(255, 255, 255);
+  --background-color-block: rgb(196, 196, 196);
+
+  --text-color-primary: rgb(255, 90, 60);
+  --text-color-black: rgb(7, 28, 31);
+  --text-color-white: rgb(255, 255, 255);
+  --text-color-dimmed: rgb(158, 171, 178);
+  --text-color-gray: rgb(197, 198, 202);
   --text-color-gray-500: rgb(137, 154, 162);
   --text-color-gray-700: rgb(140, 140, 140);
+  --text-color-gray-800: rgb(109, 119, 129);
+  --text-color-gray-900: rgb(117, 116, 126);
   --text-color-footer: rgb(196, 196, 196);
+  --text-color-blog: rgb(36, 36, 36);
 
-  --fill-color-primary:rgb(255,90,60);
-  --fill-color-white:rgb(255,255,255);
+  --fill-color-primary: rgb(255, 90, 60);
+  --fill-color-white: rgb(255, 255, 255);
 }
 
 * {
@@ -31,21 +35,29 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 html {
   font-size: 62.5%;
   font-family: var(--font-family-primary);
   font-weight: 400;
   scroll-behavior: smooth;
 }
+
 body {
   font-size: 1.6rem;
   color: var(--text-color-black);
   background-color: var(--background-color-white);
-  line-height: 2.4rem; 
+  line-height: 2.4rem;
 }
-button,input,ul,li,a {
+
+button,
+input,
+ul,
+li,
+a {
   all: unset;
 }
+
 button {
   cursor: pointer;
 }
@@ -62,11 +74,12 @@ button {
   padding: 1.2rem 2.4rem;
   border-radius: 1rem;
   cursor: pointer;
-} 
+}
+
 .button-md {
   background-color: var(--background-color-primary);
   color: var(--text-color-white);
   padding: 1.6rem 2.4rem;
   border-radius: 1rem;
   cursor: pointer;
-} 
+}
