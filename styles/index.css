@@ -3,6 +3,7 @@
 @import "./header.css";
 @import "./container.css";
 @import "./footer.css";
+@import "./responsive.css";
 
 :root {
   --font-family-primary: "Poppins", serif;
@@ -48,6 +49,10 @@ body {
   color: var(--text-color-black);
   background-color: var(--background-color-white);
   line-height: 2.4rem;
+}
+
+#root {
+  overflow-x: hidden;
 }
 
 button,

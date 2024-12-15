@@ -1,5 +1,5 @@
 #footer {
-  height: 502px;
+  min-height: 502px;
   padding: 4rem 2rem 1rem;
 }
 
@@ -10,8 +10,7 @@
 
 .footer-wrap {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 10rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
 }
 
 .footer-content {
@@ -26,4 +25,11 @@
   justify-content: space-between;
   padding: 0 4px 16px 4px;
   border-bottom: 1px solid rgba(77, 105, 175, 1)
+}
+
+@media(min-width:768px) {
+  .footer-wrap {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10rem;
+  }
 }

@@ -19,7 +19,7 @@
     <header id="header-hero">
       <section id="top-bar" class="bg-secondary">
         <div class="container mx-auto flex justify-beetwen px-2 items-center text-white h-full">
-          <div class="flex space-x-6">
+          <div class="flex flex-col md:flex-row md:space-x-6">
             <div class="flex items-center space-x-2">
               <img class="fill-primary svg" src="./icons/header/mail.svg" />
               <span>Info@webmail.com</span>
@@ -122,7 +122,7 @@
             <p class="text-lg text-dimmed">Work with Renting brokers who help you to get started with smart tools to.
             </p>
           </div>
-          <div class="flex justify-around gap-x-11 about-card">
+          <div class="about-card">
             <div class="flex flex-col justify-center bg-white ounded-20 items-center shadow">
               <img src="./icons/about/house-dolar.svg" class="about-card__svg" alt="">
               <div class="space-y-5 flex flex-col items-center about-card__content">
@@ -159,7 +159,7 @@
             </div>
           </div>
           <div class="space-y-8">
-            <div class="flex flex-col space-y-6">
+            <div class="flex flex-col space-y-6 about-block__heading">
               <h1 class="text-title text-700">Dream living Spaces
                 setting New Build
               </h1>
@@ -169,23 +169,23 @@
             <div class="flex flex-col space-y-8">
               <div class="flex space-x-3.5">
                 <img src="./icons/about/house.svg" alt="" width="50" height="50">
-                <div class="flex flex-col space-y-2.5 w-2/4">
+                <div class="flex flex-col space-y-2.5 w-2/4 about-block__item">
                   <h3 class="text-700 text-xl">The perfect Rsidencye</h3>
                   <p class="text-gray-500" style="line-height: 28px;">Take a deep dive and browse origin neighborhood
                     photos.</p>
                 </div>
               </div>
               <div class="flex space-x-3.5">
-                <img src="./icons/about/house.svg" alt="" width="50" height="50">
-                <div class="flex flex-col space-y-2.5 w-2/4">
+                <img src="./icons/about/user.svg" alt="" width="50" height="50">
+                <div class="flex flex-col space-y-2.5 w-2/4 about-block__item">
                   <h3 class="text-700 text-xl">The perfect Rsidencye</h3>
                   <p class="text-gray-500" style="line-height: 28px;">Take a deep dive and browse origin neighborhood
                     photos.</p>
                 </div>
               </div>
               <div class="flex space-x-3.5">
-                <img src="./icons/about/house.svg" alt="" width="50" height="50">
-                <div class="flex flex-col space-y-2.5 w-2/4">
+                <img src="./icons/about/earth.svg" alt="" width="50" height="50">
+                <div class="flex flex-col space-y-2.5 w-2/4 about-block__item">
                   <h3 class="text-700 text-xl">The perfect Rsidencye</h3>
                   <p class="text-gray-500" style="line-height: 28px;">Take a deep dive and browse origin neighborhood
                     photos.</p>
@@ -249,7 +249,7 @@
           </div>
           <div class="services__list">
             <div class="services__item">
-              <img src="./icons/about/bed.svg" height="38" width="48" alt="">
+              <img src="./icons/about/services/bed.svg" height="38" width="48" alt="">
               <div class="space-y-4 services__content">
                 <span class="text-2xl text-600">Bed Rooms</span>
                 <p class="text-gray-700">Desktop publishing software like aldus page maker including </p>
@@ -260,9 +260,43 @@
               </button>
             </div>
             <div class="services__item">
-              <img src="./icons/about/bed.svg" height="38" width="48" alt="">
+              <img src="./icons/about/services/bath.svg" height="38" width="48" alt="">
               <div class="space-y-4 services__content">
-                <span class="text-2xl text-600">Bed Rooms</span>
+                <span class="text-2xl text-600">Swimming pool</span>
+                <p class="text-gray-700">React creative agency
+                  amet, consec tetur adipiscing elit.</p>
+              </div>
+              <button class="space-x-2 text-500 font-popins">
+                <span class="">Learn more</span>
+                <img src="./icons/about/arrow-right.svg" alt="">
+              </button>
+            </div>
+            <div class="services__item">
+              <img src="./icons/about/services/thuoc.svg" height="38" width="48" alt="">
+              <div class="space-y-4 services__content">
+                <span class="text-2xl text-600">Copywriting content</span>
+                <p class="text-gray-700">The standard chunk of used since the 1500s is reproduced</p>
+              </div>
+              <button class="space-x-2 text-500 font-popins">
+                <span class="">Learn more</span>
+                <img src="./icons/about/arrow-right.svg" alt="">
+              </button>
+            </div>
+            <div class="services__item">
+              <img src="./icons/about/services/house.svg" height="38" width="48" alt="">
+              <div class="space-y-4 services__content">
+                <span class="text-2xl text-600">Smart Home</span>
+                <p class="text-gray-700">The standard chunk of used since the 1500s is reproduced</p>
+              </div>
+              <button class="space-x-2 text-500 font-popins">
+                <span class="">Learn more</span>
+                <img src="./icons/about/arrow-right.svg" alt="">
+              </button>
+            </div>
+            <div class="services__item">
+              <img src="./icons/about/services/lib.svg" height="38" width="48" alt="">
+              <div class="space-y-4 services__content">
+                <span class="text-2xl text-600">Libarary area</span>
                 <p class="text-gray-700">Desktop publishing software like aldus page maker including </p>
               </div>
               <button class="space-x-2 text-500 font-popins">
@@ -271,43 +305,11 @@
               </button>
             </div>
             <div class="services__item">
-              <img src="./icons/about/bed.svg" height="38" width="48" alt="">
+              <img src="./icons/about/services/user.svg" height="38" width="48" alt="">
               <div class="space-y-4 services__content">
-                <span class="text-2xl text-600">Bed Rooms</span>
-                <p class="text-gray-700">Desktop publishing software like aldus page maker including </p>
-              </div>
-              <button class="space-x-2 text-500 font-popins">
-                <span class="">Learn more</span>
-                <img src="./icons/about/arrow-right.svg" alt="">
-              </button>
-            </div>
-            <div class="services__item">
-              <img src="./icons/about/bed.svg" height="38" width="48" alt="">
-              <div class="space-y-4 services__content">
-                <span class="text-2xl text-600">Bed Rooms</span>
-                <p class="text-gray-700">Desktop publishing software like aldus page maker including </p>
-              </div>
-              <button class="space-x-2 text-500 font-popins">
-                <span class="">Learn more</span>
-                <img src="./icons/about/arrow-right.svg" alt="">
-              </button>
-            </div>
-            <div class="services__item">
-              <img src="./icons/about/bed.svg" height="38" width="48" alt="">
-              <div class="space-y-4 services__content">
-                <span class="text-2xl text-600">Bed Rooms</span>
-                <p class="text-gray-700">Desktop publishing software like aldus page maker including </p>
-              </div>
-              <button class="space-x-2 text-500 font-popins">
-                <span class="">Learn more</span>
-                <img src="./icons/about/arrow-right.svg" alt="">
-              </button>
-            </div>
-            <div class="services__item">
-              <img src="./icons/about/bed.svg" height="38" width="48" alt="">
-              <div class="space-y-4 services__content">
-                <span class="text-2xl text-600">Bed Rooms</span>
-                <p class="text-gray-700">Desktop publishing software like aldus page maker including </p>
+                <span class="text-2xl text-600">Responsive Duity</span>
+                <p class="text-gray-700">React creative agency
+                  amet, consec tetur adipiscing elit.</p>
               </div>
               <button class="space-x-2 text-500 font-popins">
                 <span class="">Learn more</span>
@@ -423,7 +425,7 @@
               you
               never lose hope.</p>
           </div>
-          <div class="relative">
+          <div class="relative testimonial-content">
             <img class="testimonial__button-left" src="./icons/blog/button-left.svg" alt="">
             <img class="testimonial__button-right" src="./icons/blog/button-right.svg" alt="">
             <div class="testimonial__wrap">
@@ -431,7 +433,7 @@
                 <div class="testimonial-block bg-primary absolute bottom-0 left-0"></div>
                 <div class="testimonial-block bg-block relative"></div>
               </div>
-              <div class="flex w-2/4 flex-col justify-center space-y-7" style="padding: 20px;">
+              <div class="flex w-full md:w-2/4 flex-col justify-center space-y-7 testimonial__block">
                 <img src="./icons/blog/quotes.svg" width="40" alt="">
                 <div class="space-y-5">
                   <p class="text-500 text-3lg">We make sure you have a fine distance with the sickness. We make you
@@ -466,14 +468,14 @@
               </button>
             </div>
             <div class="space-y-7 renting__item lifting">
-              <span class="text-white text-700" style="font-size: 2rem;">San Francisco, California</span>
+              <span class="text-white text-700" style="font-size: 2rem;">Washington DC</span>
               <button class="space-x-2 renting__button">
                 <span class="text-primary text-600">See more</span>
                 <img src="./icons/blog/arrow-right.svg" alt="">
               </button>
             </div>
             <div class="space-y-7 renting__item">
-              <span class="text-white text-700" style="font-size: 2rem;">San Francisco, California</span>
+              <span class="text-white text-700" style="font-size: 2rem;">Chicago</span>
               <button class="space-x-2 renting__button">
                 <span class="text-primary text-600">See more</span>
                 <img src="./icons/blog/arrow-right.svg" alt="">
@@ -577,7 +579,7 @@
             <h1 class="text-700 text-title" style="color: rgb(31, 36, 46);">Looking for to buy a property?</h1>
           </div>
           <div class="flex" style="min-height: 65rem;">
-            <div class="flex flex-col w-2/4">
+            <div class="flex flex-col w-full md:w-2/4">
               <p class="text-gray-700 text-lg" style="width: 62%;">Browse our property listing and find your best and
                 suitable home or house for
                 sale,
@@ -610,7 +612,7 @@
                 </div>
               </div>
             </div>
-            <div class="w-2/4 relative">
+            <div class="w-full md:w-2/4 relative">
               <div class="contact-wrap space-y-10">
                 <h2 class="text-700 text-title text-blog">Contact Us</h2>
                 <form action="" class="flex flex-col space-y-10">
@@ -640,7 +642,7 @@
       </section>
     </div>
     <footer id="footer" class="bg-four relative text-footer font-nunito">
-      <div class="container-wrap h-full flex flex-col justify-around">
+      <div class="container-wrap h-full flex flex-col justify-around space-y-10">
         <div class="footer-wrap">
           <section class="flex flex-col space-y-4">
             <img src="./icons/footer/logo.svg" width="146" alt="">
@@ -664,23 +666,23 @@
               </ul>
             </div>
             <div class="flex flex-col space-y-6">
-              <span class="text-700" style="line-height: 28px;">Company</span>
+              <span class="text-700" style="line-height: 28px;">Contact</span>
               <ul class="flex flex-col space-y-4">
-                <li>About</li>
-                <li>Careers</li>
-                <li>Mobile</li>
-                <li>Blog</li>
-                <li>How we work?</li>
+                <li>Help/FAQ</li>
+                <li>Press</li>
+                <li>Affiliates</li>
+                <li>Propert owners</li>
+                <li>Partners</li>
               </ul>
             </div>
             <div class="flex flex-col space-y-6">
-              <span class="text-700" style="line-height: 28px;">Company</span>
+              <span class="text-700" style="line-height: 28px;">More</span>
               <ul class="flex flex-col space-y-4">
-                <li>About</li>
-                <li>Careers</li>
-                <li>Mobile</li>
-                <li>Blog</li>
-                <li>How we work?</li>
+                <li>Land fees</li>
+                <li>Property</li>
+                <li>Law tips</li>
+                <li>Nadges</li>
+                <li>Privacy</li>
               </ul>
             </div>
           </section>
@@ -698,7 +700,7 @@
             </div>
           </section>
         </div>
-        <div class="flex justify-beetwen">
+        <div class="flex justify-beetwen flex-col md:flex-row" style="margin: 10rem 0 2rem 0;">
           <span class="text-lg">email@gmail.com</span>
           <span class="text-lg">(123) 456-7890</span>
           <span class="text-sm">© 2021 Aeyman Megha All rights reserved.</span>

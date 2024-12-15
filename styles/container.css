@@ -21,11 +21,15 @@
   }
 }
 
+.about-card {
+  display: flex;
+  justify-content: space-around;
+  gap: 4rem;
+}
 
 .about-card>* {
   width: 36rem;
   height: 34rem;
-
 }
 
 .about-card__svg {
@@ -45,6 +49,7 @@
 #dream-living-space {
   min-height: 700px;
 }
+
 
 #dream-living-space>*,
 #about-home>* {
@@ -328,6 +333,10 @@
   margin: 120px 0;
 }
 
+.testimonial__block {
+  padding: 20px;
+}
+
 .testimonial__heading {
   text-align: center;
   width: 60%;
@@ -359,8 +368,9 @@
 
 .testimonial__wrap {
   display: flex;
+  flex-direction: row;
   width: 933px;
-  height: 466px;
+  min-height: 466px;
   margin: 0 auto;
 }
 
