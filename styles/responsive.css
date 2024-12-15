@@ -157,4 +157,8 @@
     width: 100%;
     height: 65rem;
   }
+
+  .footer-wrap {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
